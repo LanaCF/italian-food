@@ -93,6 +93,8 @@ input::placeholder {
     font-weight: 400;
 }
 
+/* FONT */
+
 .font-fredericka {
     font-family: 'Fredericka';
 }
@@ -116,6 +118,8 @@ input::placeholder {
     font-weight: 400;
 }
 
+/* HEADER BACKGROUND */
+
 .header {
     height: 825px;
     background: rgb(255,224,1);
@@ -128,7 +132,6 @@ input::placeholder {
 .wrapper-header {
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
     max-width: 1440px;
     height: 100%;
     background-color: #fedf01;
@@ -148,11 +151,12 @@ input::placeholder {
     left: 970px;
 }
 
+/* HEADER TOP */
+
 .header-top {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
-    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 1440px;
     height: 105px;
     padding: 0 57px;    
@@ -160,23 +164,11 @@ input::placeholder {
     z-index: 1;
 }
 
-.mini-menu {
-    margin-right: 25px;
-    display: none;
-}
-
-.mini-menu__line {
-    background-color: #212121;
-    width: 50px;
-    height: 5px;
-    margin-bottom: 10px;
-    /* position: absolute;
-    top: 40px;
-    left: 35px; */
-}
-
-.mini-menu__line:last-child {
-    margin-bottom: 15px;
+.header-top__info-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .header-top__logo {
@@ -208,16 +200,19 @@ input::placeholder {
     text-align: right;
 }
 
+/* HEADER MAIN MENU */
+
+.main-menu {
+    margin-top: 31px;
+}
+
 .main-menu__list {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 31px;
-    padding-right: 61px;
+    padding-right: 60px;
     position: relative;
-    /* top: 100px;
-    right: 0; */
     z-index: 2;
 }
 
@@ -226,6 +221,80 @@ input::placeholder {
     padding-left: 60px;
     letter-spacing: 3px;
 }
+
+.main-menu__active {
+    position: relative;
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin-top: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: white;
+    transform: translateX(100%);
+    z-index: 50;
+    transition: 0.3s;
+}
+
+.main-menu__list-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.main-menu__menu-item-active {
+    display: flex;
+    font-size: 20px;
+    padding-left: 0;
+    padding: 10px;
+}
+
+.main-menu__active-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.active-icon {
+    font-size: 20px;
+    background-color: #fff07f;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.main-menu__active-icon:active .main-menu__active {
+    transform: translateX(100%);
+}
+
+/* HEADER MINI MENU */
+
+.mini-menu {
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    background-color: #fffd8b;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 45;
+    cursor: pointer;
+    display: none;
+}
+
+.mini-menu__line {
+    background-color: #212121;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+}
+
+.mini-menu__line:last-child {
+    margin-bottom: 0;
+}
+
+/* HEADER OFFER */
 
 .header-offer {
     max-width: 1440px;
@@ -311,6 +380,8 @@ input::placeholder {
     background-color: white;
 }
 
+/* PLATE */
+
 .header-plate {
     /* max-width: 815px; */
     position: relative;
@@ -347,11 +418,15 @@ input::placeholder {
     z-index: 4;
 }
 
+/* MAIN */
+
 .main {
     margin: 0 auto;
     max-width: 1440px;
-    padding-top: 87px;
+    padding: 87px 15px 0 15px;
 }
+
+/* SPAGHETTI */
 
 .spaghetti {
     position: absolute;
@@ -359,6 +434,8 @@ input::placeholder {
     left: -130px;
     filter: drop-shadow(0 0 25px rgba(159, 158, 158, 0.5));
 }
+
+/* DISHES */
 
 .block-services {
     text-align: center;
@@ -430,6 +507,8 @@ input::placeholder {
     z-index: -1;
 }
 
+/* DISCOVER */
+
 .block-services__discover {
     font-size: 21px;
 }
@@ -492,6 +571,8 @@ input::placeholder {
     margin-left: 0;
 }
 
+/* TRY TODAY */
+
 .block-try-today {
     display: flex;
     justify-content: center;
@@ -551,6 +632,8 @@ input::placeholder {
     color: white;
 }
 
+/* RESERVATION */
+
 .block-reservation {
     margin-top: 92px;
     text-align: center;
@@ -587,6 +670,8 @@ input::placeholder {
 .block-reservation__buttom:active {
     background-color: white;
 }
+
+/* FOOTER */
 
 .footer {
     height: 584px;
@@ -720,7 +805,6 @@ input::placeholder {
 @media (max-width: 1150px) {
     .header-offer__wrapper-offer {
         overflow: visible;
-        z-index: 10px;
     }
 
     .header-offer__button {
@@ -744,24 +828,30 @@ input::placeholder {
         top: 410px;
         left: -75px;
     }
-
-    .header-offer__button {
-
-    }
 }
 
 @media (max-width: 992px) {    
     .header-top {
-        padding-left: 30px;  
-    }
-
-    .mini-menu {
-        display: inline;
+        padding: 0 100px 0 30px;  
     }
 
     .main-menu {
         display: none;
     }
+
+    .mini-menu {
+        display: block;
+    }
+    
+    .movie-menu:active .main-menu__active {
+        display: inline;
+        transform: translateX(0%);
+        z-index: 100;
+    }
+
+    
+
+    
 
     .mobil-adapt {
         margin-bottom: 20px;
@@ -829,6 +919,21 @@ input::placeholder {
 }
 
 @media (max-width: 607px) {
+    .header-top__logo-black {
+        width: 200px;
+        margin-right: 55px;
+    }
+
+    .header-top__delivery {
+        padding-right: 0;
+        min-width: 200px;
+    }
+
+    .header-top__express-delivery,
+    .header-top__phone-delivery {
+        text-align: left;
+    }
+
     .header-plate__photo-plate {
         position: relative;
         width: 200px;
@@ -868,8 +973,9 @@ input::placeholder {
 
 @media (max-width: 576px) {
     .header-offer__leaf {
-        top: 125px;
+        top: 35px;
         left: 320px;
+        width: 35px;
     }
 
     .header-offer__dont-wait {
@@ -928,6 +1034,14 @@ input::placeholder {
 }
 
 @media (max-width: 457px) {
+    .header-top__logo-black {
+        margin-right: 0;
+    }
+
+    .movie-menu:active .main-menu__active {
+        width: 100vw;
+    }
+
     .block-dishes__dishes-photo {
         width: 270px;
     }
@@ -946,5 +1060,21 @@ input::placeholder {
 
     .spaghetti {
         z-index: 25;
+    }
+}
+
+@media (max-width: 355px) {
+    .mini-menu {
+        position: absolute;
+        top: 50px;
+        right: 15px;
+        padding: 10px;
+    }
+
+    .mini-menu__line {
+        background-color: #212121;
+        width: 15px;
+        height: 3px;
+        margin-bottom: 3px;
     }
 }
