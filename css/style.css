@@ -592,7 +592,7 @@ input::placeholder {
 }
 
 .block-try-today__box-text-pasta {
-    width: 216px;
+    max-width: 216px;
     margin: 44px 0 0 45px;
 }
 
@@ -760,6 +760,25 @@ input::placeholder {
 
 
 @media (max-width: 1235px) {
+    .block-try-today {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block-try-today__block-photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 597px;
+    }
+
+    .block-try-today__pasta,
+    .block-try-today__taste,
+    .block-try-today__fresh {
+        width: 510px;
+        margin: 0 0 35px;
+    }
+
     .footer__logo {
         margin: 50px 0 0 100px;
     }
@@ -789,15 +808,14 @@ input::placeholder {
 
     .block-services__photo {
         max-width: 1065px;
-        margin: 70px 0 70px;
+        margin: 70px auto 70px;
     }
 
-    .block-try-today__pasta,
-    .block-try-today__taste,
-    .block-try-today__fresh {
+    .block-try-today__block-photo {
         width: 510px;
-        margin: 0 0 35px;
     }
+
+    
 }
 
 @media (max-width: 1150px) {
@@ -826,6 +844,8 @@ input::placeholder {
         top: 410px;
         left: -75px;
     }
+
+    
 }
 
 @media (max-width: 992px) {    
@@ -862,6 +882,7 @@ input::placeholder {
         max-width: 900px;
         margin: 0 auto 25px auto;
     }
+
     .block-try-today {
         margin-top: 35px;
     }
@@ -873,7 +894,9 @@ input::placeholder {
     }
 
     .block-reservation__form-list {
-        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer__logo {
@@ -912,6 +935,12 @@ input::placeholder {
     .header-plate {
         right: 15px;
         top: 50%;
+    }
+
+    .spaghetti {
+        width: 145px;
+        top: 755px;
+        left: -60px;
     }
 }
 
@@ -957,12 +986,6 @@ input::placeholder {
         width: 40px;
     }
 
-    .spaghetti {
-        width: 145px;
-        top: 755px;
-        left: -60px;
-    }
-
     .block-try-today__pasta {
         margin: 0 0 35px;
     }
@@ -999,25 +1022,39 @@ input::placeholder {
         transform: none;
     }
 
-    .block-reservation__form-list input{
-        width: 250px;
-        margin-left: 25px;
-    }
-
     .block-reservation__buttom {
-        width: 250px;
-        margin-left: 25px;
+        max-width: 250px;
     }
 
-    .block-try-today__pasta {
-        width: 100%;
+    .block-services__services-title {
+        font-size: 35px;
     }
 
-    .block-try-today__taste {
-        width: 100%;
-    }
-
+    .block-try-today__block-photo,
+    .block-try-today__pasta,
+    .block-try-today__taste,
     .block-try-today__fresh {
+        width: 100%;
+    }
+
+    .block-try-today__title {
+        font-size: 20px;
+    }
+
+    .block-try-today__info {
+        font-size: 32px;
+    }
+
+    .block-try-today__info-small {
+        font-size: 27px;
+    }
+
+    .block-reservation {
+        margin-top: 25px;
+    }
+
+    .block-reservation__list,
+    input {
         width: 100%;
     }
 
