@@ -459,7 +459,7 @@ input::placeholder {
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 1440px;
-    margin: 50px auto 149px;
+    margin: 50px 0 149px;
 }
 
 .block-dishes {
@@ -535,7 +535,8 @@ input::placeholder {
 
 .food-photo-transparency::before {
     content: '';
-    width: 535px;
+    /* width: 535px; */
+    width: 100%;
     height: 357px;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -782,23 +783,20 @@ input::placeholder {
 }
 
 @media (max-width: 1200px) {
-    .block-dishes__dishes-info {
-        font-size: 21px;
-    }
-
     .block-services__services-info {
-        font-size: 21px;
-        padding: 0 50px 20px 50px;
+        padding-bottom: 20px;
     }
 
     .block-services__photo {
         max-width: 1065px;
+        margin: 70px 0 70px;
     }
 
     .block-try-today__pasta,
     .block-try-today__taste,
     .block-try-today__fresh {
         width: 510px;
+        margin: 0 0 35px;
     }
 }
 
@@ -849,10 +847,6 @@ input::placeholder {
         z-index: 100;
     }
 
-    
-
-    
-
     .mobil-adapt {
         margin-bottom: 20px;
     }
@@ -866,7 +860,10 @@ input::placeholder {
         display: flex;
         justify-content: center;
         max-width: 900px;
-        margin: 0 auto 70px auto;
+        margin: 0 auto 25px auto;
+    }
+    .block-try-today {
+        margin-top: 35px;
     }
 
     .food-photo-main__mobil {
@@ -1013,15 +1010,15 @@ input::placeholder {
     }
 
     .block-try-today__pasta {
-        width: 330px;
+        width: 100%;
     }
 
     .block-try-today__taste {
-        width: 330px;
+        width: 100%;
     }
 
     .block-try-today__fresh {
-        width: 330px;
+        width: 100%;
     }
 
     .footer__logo {
@@ -1043,7 +1040,7 @@ input::placeholder {
     }
 
     .block-dishes__dishes-photo {
-        width: 270px;
+        width: 200px;
     }
     
     .background-stripe {
