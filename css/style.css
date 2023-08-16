@@ -814,8 +814,6 @@ input::placeholder {
     .block-try-today__block-photo {
         width: 510px;
     }
-
-    
 }
 
 @media (max-width: 1150px) {
@@ -844,8 +842,6 @@ input::placeholder {
         top: 410px;
         left: -75px;
     }
-
-    
 }
 
 @media (max-width: 992px) {    
@@ -1009,7 +1005,6 @@ input::placeholder {
     }
 
     .header-offer__hungry {
-        /* padding-top: 100px; */
         width: 200px;
     }
 
