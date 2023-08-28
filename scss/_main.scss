@@ -1,0 +1,251 @@
+/* MAIN */
+
+.main {
+    margin: 0 auto;
+    max-width: $base-width;
+    padding: 87px 15px 0 15px;
+}
+
+/* SPAGHETTI */
+
+.spaghetti {
+    position: absolute;
+    top: 675px;
+    left: -130px;
+    filter: drop-shadow(0 0 25px rgba(159, 158, 158, 0.5));
+}
+
+/* DISHES */
+
+.block-services {
+    text-align: center;
+    max-width: $base-width;
+
+    &__services-title {
+        font-size: 50px;
+        padding-bottom: 25px;
+    }
+    
+    &__services-info {
+        font-size: 17px;
+        padding-bottom: 20px;
+        line-height: 25px;
+        max-width: $base-width;
+    }
+}
+
+.mobil-adapt {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: $base-width;
+    margin: 50px 0 149px;
+}
+
+.block-dishes {
+    @include flex;
+    flex-direction: column;
+    width: 359px;
+
+    &__dishes-photo {
+        filter: drop-shadow(15px 25px 10px #9f9e9e9a);
+    }
+    
+    &__dishes-name {
+        font-size: 21px;
+        margin-top: 51px;
+    }
+    
+    &__dishes-info {
+        margin: 25px 0 33px;
+        text-align: center;
+        width: 300px;
+    }
+    
+    &__button-small {
+        font-size: 21px;
+        width: 228px;
+        height: 59px;
+        background-color: #fedf01;
+        border: 1px solid black;
+        border: none;
+        width: 196px;
+        height: 58px;
+        margin-bottom: 55px;
+    }
+}
+
+.background-stripe {
+    width: 100%;
+    height: 140px;
+    background-color: #e5e3a7;
+    position: absolute;
+    top: 1240px;
+    left: 0;
+    z-index: -1;
+}
+
+/* DISCOVER */
+
+.block-services__discover {
+    font-size: 21px;
+}
+
+.block-services__photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $base-width;
+    margin: 70px auto 70px;
+}
+
+.mobil,
+.food-photo-main__mobil {
+    display: none;
+}
+
+.food-photo-transparency {    
+    width: 535px;
+    height: 357px;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 357px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.food-photo-main {
+    width: 940px;
+    height: 407px;
+    background-image: url(../img/Image_center_main.png);
+    background-position: center;
+    box-shadow: 15px 5px 25px 10px rgb(159, 158, 158);
+}
+
+.photo-navigation {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: $base-width;
+
+    &__slide {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #d4d4d4;
+        margin-left: 5px;
+    }
+}
+
+.slide-active {
+    background-color: #f9da01;
+    margin-left: 0;
+}
+
+/* TRY TODAY */
+
+.block-try-today {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 114px;
+    max-width: $base-width;
+
+    &__pasta {
+        width: 597px;
+        height: 420px;
+        margin: 0 10px 35px;
+        background-image: url(../img/Image_try_it_today1.png);
+        overflow: hidden;
+        background-position: 640px 0px;
+    }
+    
+    &__box-text-pasta {
+        max-width: 216px;
+        margin: 44px 0 0 45px;
+    }
+    
+    &__title {
+        font-size: 25px;
+        color: white;
+    }
+    
+    &__info {
+        font-size: 42px;
+        color: white;
+    }
+    
+    &__taste {
+        width: 595px;
+        height: 192px;
+        margin: 0 10px 35px;
+        background-image: url(../img/Image_try_it_today2.png);
+        overflow: hidden;
+        background-position: 0 310px;
+    }
+    
+    &__fresh {
+        width: 595px;
+        height: 192px;
+        margin: 0 10px;
+        background-image: url(../img/Image_try_it_today3.png);
+        overflow: hidden;
+        background-position: 0 220px;
+    }
+    
+    &__box-text-taste {
+        margin: 30px 0 0 29px;
+    }
+    
+    &__info-small {
+        font-size: 33px;
+        color: white;
+    }
+}
+
+/* RESERVATION */
+
+.block-reservation {
+    margin-top: 92px;
+    text-align: center;
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 550px;
+    }
+    
+    &__form-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 785px;
+        height: 52px;
+    }
+    
+    &__buttom {
+        height: 65px;
+        width: 379px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ffe001;
+        font-size: 21px;
+    }
+    
+    &__buttom:hover {
+        cursor: pointer;
+    }
+    
+    &__buttom:active {
+        background-color: white;
+    }
+}
+

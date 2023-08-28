@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Fredericka';
+    src: 
+        url('../fonts/Fredericka/Fredericka_the_Great_Regular_400.eot') format('opentype'),
+        url('../fonts/Fredericka/Fredericka_the_Great_Regular_400.ttf') format('truetype'),
+        url('../fonts/Fredericka/Fredericka_the_Great_Regular_400.woff') format('woff'),
+        url('../fonts/Fredericka/Fredericka_the_Great_Regular_400.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gabelisa';
+    src: 
+        url('../fonts/Gabelisa/Gabelisa_Regular_400.eot') format('opentype'),
+        url('../fonts/Gabelisa/Gabelisa_Regular_400.ttf') format('truetype'),
+        url('../fonts/Gabelisa/Gabelisa_Regular_400.woff') format('woff'),
+        url('../fonts/Gabelisa/Gabelisa_Regular_400.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: 
+        url('../fonts/Montserrat/Montserrat_Bold_700.eot') format('opentype'),
+        url('../fonts/Montserrat/Montserrat_Bold_700.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat_Bold_700.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat_Bold_700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: 
+        url('../fonts/Montserrat/Montserrat_ExtraBold_800.eot') format('opentype'),
+        url('../fonts/Montserrat/Montserrat_ExtraBold_800.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat_ExtraBold_800.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat_ExtraBold_800.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: 
+        url('../fonts/Montserrat/Montserrat_Regular_400.eot') format('opentype'),
+        url('../fonts/Montserrat/Montserrat_Regular_400.ttf') format('truetype'),
+        url('../fonts/Montserrat/Montserrat_Regular_400.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat_Regular_400.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* FONT */
+
+.font-fredericka {
+    font-family: 'Fredericka';
+}
+
+.font-gabelisa {
+    font-family: 'Gabelisa';
+}
+
+.font-montserrat-b {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.font-montserrat-exb {
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+
+.font-montserrat-r {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}

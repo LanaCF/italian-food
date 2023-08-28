@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    display: flex;
+    height: 65px;
+    margin-bottom: 26px;
+}
+
+input {
+    height: 65px;
+    width: 379px;
+    padding-left: 24px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+}
+
+input:nth-child(3) {
+    margin-bottom: 0;
+}
+
+input::placeholder {
+    font-size: 17px;
+    color: #3d3d3d;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}

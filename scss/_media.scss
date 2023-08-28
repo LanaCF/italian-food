@@ -1,0 +1,348 @@
+@media (max-width: 1235px) {
+    .block-try-today {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block-try-today__block-photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 597px;
+    }
+
+    .block-try-today__pasta,
+    .block-try-today__taste,
+    .block-try-today__fresh {
+        width: 510px;
+        margin: 0 0 35px;
+    }
+
+    .footer__logo {
+        margin: 50px 0 0 100px;
+    }
+
+    .footer__info-block {
+        max-width: 1440px;
+        padding: 30px 470px 0 101px;
+    }
+
+    .footer__info {
+        padding: 10px 0;
+    }
+
+    .footer__info-content {
+        font-size: 21px;
+    }
+
+    .copyright {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .block-services__services-info {
+        padding-bottom: 20px;
+    }
+
+    .block-services__photo {
+        max-width: 1065px;
+        margin: 70px auto 70px;
+    }
+
+    .block-try-today__block-photo {
+        width: 510px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .header-offer__wrapper-offer {
+        overflow: visible;
+    }
+
+    .header-offer__button {
+        transform: translate(10px, 75px);
+    }
+
+    .header-plate {
+        position: absolute;
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.3;
+    }
+
+    .header-plate__pasta {
+        top: -35px;
+        left: 35px;
+    }
+
+    .header-plate__tomato {
+        top: 410px;
+        left: -75px;
+    }
+}
+
+@media (max-width: 992px) {    
+    .header-top {
+        padding: 0 100px 0 30px;  
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .mini-menu {
+        display: block;
+    }
+    
+    .movie-menu:active .main-menu__active {
+        display: inline;
+        transform: translateX(0%);
+        z-index: 100;
+    }
+
+    .mobil-adapt {
+        margin-bottom: 20px;
+    }
+    
+    .block-services__photo {
+        display: none;
+    }
+
+    .mobil {
+        display: inline;
+        display: flex;
+        justify-content: center;
+        max-width: 900px;
+        margin: 0 auto 25px auto;
+    }
+
+    .block-try-today {
+        margin-top: 35px;
+    }
+
+    .food-photo-main__mobil {
+        display: inline;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+
+    .block-reservation__form-list {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__logo {
+        margin: 30px 0 0 100px;
+    }
+
+    .footer__info-block {
+        padding: 25px 400px 0 100px;
+    }
+
+    .footer__social {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .mini-menu {
+        margin-right: auto;
+    }
+    
+    .header-top {
+        justify-content: flex-end;
+        padding-top: 30px;
+        height: initial;
+    }
+    
+    .header-top__logo {
+        margin-right: 0;
+    }
+
+    .main-menu__list {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .header-plate {
+        right: 15px;
+        top: 50%;
+    }
+
+    .spaghetti {
+        width: 145px;
+        top: 755px;
+        left: -60px;
+    }
+}
+
+@media (max-width: 607px) {
+    .header-top__logo-black {
+        width: 200px;
+        margin-right: 55px;
+    }
+
+    .header-top__delivery {
+        padding-right: 0;
+        min-width: 200px;
+    }
+
+    .header-top__express-delivery,
+    .header-top__phone-delivery {
+        text-align: left;
+    }
+
+    .header-plate__photo-plate {
+        position: relative;
+        width: 200px;
+        right: -200px;
+        top: 50px;
+        left: 185px;
+    }
+
+    .header-plate__pasta {
+        top: 30px;
+        left: 135px;
+        width: 50px;
+    }
+
+    .header-plate__tomato {
+        top: 200px;
+        left: 150px;
+        width: 40px;
+    }
+
+    .header-plate__leaf2 {
+        top: 200px;
+        left: 385px;
+        width: 40px;
+    }
+
+    .block-try-today__pasta {
+        margin: 0 0 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-offer__leaf {
+        top: 35px;
+        left: 320px;
+        width: 35px;
+    }
+
+    .header-offer__dont-wait {
+        font-size: 75px;
+        text-align: center;
+    }
+
+    .header-offer__order-food {
+        width: 235px;
+        text-align: center;
+    }
+
+    .header-offer__hungry {
+        width: 200px;
+    }
+
+    .header-offer__line{
+        margin: 10px 0 10px;
+    }
+
+    .header-offer__button {
+        margin-top: 0;
+        transform: none;
+    }
+
+    .block-reservation__buttom {
+        max-width: 250px;
+    }
+
+    .block-services__services-title {
+        font-size: 35px;
+    }
+
+    .block-try-today__block-photo,
+    .block-try-today__pasta,
+    .block-try-today__taste,
+    .block-try-today__fresh {
+        width: 100%;
+    }
+
+    .block-try-today__title {
+        font-size: 20px;
+    }
+
+    .block-try-today__info {
+        font-size: 32px;
+    }
+
+    .block-try-today__info-small {
+        font-size: 27px;
+    }
+
+    .block-reservation {
+        margin-top: 25px;
+    }
+
+    .block-reservation__list,
+    input {
+        width: 100%;
+    }
+
+    .footer__logo {
+        margin: 30px 0 0 25px;
+    }
+
+    .footer__logo-yellow {
+        width: 200px;
+    }
+}
+
+@media (max-width: 457px) {
+    .header-top__logo-black {
+        margin-right: 0;
+    }
+
+    .movie-menu:active .main-menu__active {
+        width: 100vw;
+    }
+
+    .block-dishes__dishes-photo {
+        width: 200px;
+    }
+    
+    .background-stripe {
+        display: none;
+    }
+
+    .footer__info-block {
+        padding: 25px 400px 0 25px;
+    }
+
+    .footer__info-content {
+        font-size: 17px;
+    }
+
+    .spaghetti {
+        z-index: 25;
+    }
+}
+
+@media (max-width: 355px) {
+    .mini-menu {
+        position: absolute;
+        top: 50px;
+        right: 15px;
+        padding: 10px;
+    }
+
+    .mini-menu__line {
+        background-color: #212121;
+        width: 15px;
+        height: 3px;
+        margin-bottom: 3px;
+    }
+}
